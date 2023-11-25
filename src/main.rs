@@ -4,6 +4,7 @@ use std::path::PathBuf;
 mod scanner;
 mod tokens;
 mod lox;
+mod error;
 
 use scanner::Scanner;
 use lox::Lox;
@@ -23,3 +24,5 @@ fn main() {
         None => lox.start_interactive()
     }
 }
+
+// Add error handling urgent!
